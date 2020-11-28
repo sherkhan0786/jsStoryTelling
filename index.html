@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FORM-A-STORY</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header class="header">
+		<img class="headimg" src="story.png" alt="Form-a-story">
+	</header>
+
+	<main class="main">
+		<h1 class="h1">Complete the Form-Complete the story!</h1><br>
+
+		<form action="story.html" method="GET">
+			<label>Animal: </label>
+			<input type="text" name="animal" value="tiger" id="animal"><br><br>
+			<label>Another Animal: </label>
+			<input type="text" name="another_animal" value="lion" id="another_animal"><br><br>
+			<label>One More Animal: </label>
+			<input type="text" name="more_animal" value="dog" id="more_animal"><br><br>
+			<label>Adjective (past tense): </label>
+			<input type="text" name="adj" value="alarmed" id="adj"><br><br>
+			<label>Verb (ends in -ingt): </label>
+			<input type="text" name="verb" value="running" id="verb"><br><br>
+			<label>Number: </label>
+			<input type="number" name="number" value="2" id="number"><br><br>
+			<label>Yes or No : </label>
+			<input type="radio" name="select" value="Yes" id="yes"><label>Yes</label>
+			<input type="radio" name="select" value="No" id="no"><label>No</label><br><br>
+			<label>Relative Speed (ends in -er): </label>
+			<select name="speed" id="speed">
+				<option>Quicker</option>
+                <option>Faster</option>
+                <option>Slower</option>
+                <option>Lazier</option>
+			</select><br><br>
+			<label>Motivational Quote : </label>
+			<input type="text" name="quote" value="@example" id="quote"><br><br>
+			<label>Meaningful Message: </label><br><br>
+			<textarea cols="20" rows="5" value="This is message" id="message"></textarea><br><br>
+
+			<button onclick="myData()">Submit</button><br>
+        </form>
+       
+    </main>
+    
+
+</body>
+<script src="main.js"></script>
+</html>
